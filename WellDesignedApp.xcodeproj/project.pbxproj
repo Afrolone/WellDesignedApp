@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90D1E292760E73F00584D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D1E282760E73F00584D5F /* AppDelegate.swift */; };
+		E90D1E2B2760E73F00584D5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D1E2A2760E73F00584D5F /* SceneDelegate.swift */; };
+		E90D1E2D2760E73F00584D5F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D1E2C2760E73F00584D5F /* MainViewController.swift */; };
+		E90D1E302760E73F00584D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E2E2760E73F00584D5F /* Main.storyboard */; };
+		E90D1E322760E74300584D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E312760E74300584D5F /* Assets.xcassets */; };
+		E90D1E352760E74300584D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E332760E74300584D5F /* LaunchScreen.storyboard */; };
+		E97C8AE82767EEA40026EA35 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AE72767EEA40026EA35 /* Utils.swift */; };
+		E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */; };
+		E9C88682276235DF000B5223 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C88680276235DF000B5223 /* LoginViewController.swift */; };
+		E9C88683276235DF000B5223 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C88681276235DF000B5223 /* LoginViewController.xib */; };
+		E9C8868627623615000B5223 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C8868427623615000B5223 /* RegisterViewController.swift */; };
+		E9C8868727623615000B5223 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C8868527623615000B5223 /* RegisterViewController.xib */; };
+		E9D9D294276243740023D5BF /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D292276243740023D5BF /* Rubik-Italic-VariableFont_wght.ttf */; };
+		E9D9D295276243740023D5BF /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D293276243740023D5BF /* Rubik-VariableFont_wght.ttf */; };
+		E9D9D2A42762479F0023D5BF /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2962762479E0023D5BF /* Rubik-Medium.ttf */; };
+		E9D9D2A52762479F0023D5BF /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2972762479E0023D5BF /* Rubik-BoldItalic.ttf */; };
+		E9D9D2A62762479F0023D5BF /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2982762479E0023D5BF /* Rubik-SemiBoldItalic.ttf */; };
+		E9D9D2A72762479F0023D5BF /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2992762479E0023D5BF /* Rubik-Italic.ttf */; };
+		E9D9D2A82762479F0023D5BF /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29A2762479F0023D5BF /* Rubik-ExtraBold.ttf */; };
+		E9D9D2A92762479F0023D5BF /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29B2762479F0023D5BF /* Rubik-LightItalic.ttf */; };
+		E9D9D2AA2762479F0023D5BF /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29C2762479F0023D5BF /* Rubik-Black.ttf */; };
+		E9D9D2AB2762479F0023D5BF /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29D2762479F0023D5BF /* Rubik-ExtraBoldItalic.ttf */; };
+		E9D9D2AC2762479F0023D5BF /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29E2762479F0023D5BF /* Rubik-Light.ttf */; };
+		E9D9D2AD2762479F0023D5BF /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D29F2762479F0023D5BF /* Rubik-MediumItalic.ttf */; };
+		E9D9D2AE2762479F0023D5BF /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2A02762479F0023D5BF /* Rubik-SemiBold.ttf */; };
+		E9D9D2AF2762479F0023D5BF /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2A12762479F0023D5BF /* Rubik-BlackItalic.ttf */; };
+		E9D9D2B02762479F0023D5BF /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2A22762479F0023D5BF /* Rubik-Bold.ttf */; };
+		E9D9D2B1276247A00023D5BF /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9D9D2A32762479F0023D5BF /* Rubik-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E90D1E252760E73F00584D5F /* WellDesignedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellDesignedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90D1E282760E73F00584D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E90D1E2A2760E73F00584D5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E90D1E2C2760E73F00584D5F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E90D1E2F2760E73F00584D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E90D1E312760E74300584D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90D1E342760E74300584D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E90D1E362760E74300584D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97C8AE72767EEA40026EA35 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		E9C88680276235DF000B5223 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9C88681276235DF000B5223 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E9C8868427623615000B5223 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E9C8868527623615000B5223 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		E9D9D292276243740023D5BF /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E9D9D293276243740023D5BF /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E9D9D2962762479E0023D5BF /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		E9D9D2972762479E0023D5BF /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D2982762479E0023D5BF /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D2992762479E0023D5BF /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		E9D9D29A2762479F0023D5BF /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E9D9D29B2762479F0023D5BF /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D29C2762479F0023D5BF /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E9D9D29D2762479F0023D5BF /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D29E2762479F0023D5BF /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E9D9D29F2762479F0023D5BF /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D2A02762479F0023D5BF /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		E9D9D2A12762479F0023D5BF /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E9D9D2A22762479F0023D5BF /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E9D9D2A32762479F0023D5BF /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90D1E222760E73F00584D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90D1E1C2760E73E00584D5F = {
+			isa = PBXGroup;
+			children = (
+				E90D1E272760E73F00584D5F /* WellDesignedApp */,
+				E90D1E262760E73F00584D5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90D1E262760E73F00584D5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90D1E252760E73F00584D5F /* WellDesignedApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90D1E272760E73F00584D5F /* WellDesignedApp */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9D2912762434C0023D5BF /* Fonts */,
+				E90D1E282760E73F00584D5F /* AppDelegate.swift */,
+				E90D1E2A2760E73F00584D5F /* SceneDelegate.swift */,
+				E90D1E2C2760E73F00584D5F /* MainViewController.swift */,
+				E97C8AE72767EEA40026EA35 /* Utils.swift */,
+				E9C8868427623615000B5223 /* RegisterViewController.swift */,
+				E9C8868527623615000B5223 /* RegisterViewController.xib */,
+				E9C88680276235DF000B5223 /* LoginViewController.swift */,
+				E9C88681276235DF000B5223 /* LoginViewController.xib */,
+				E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */,
+				E90D1E2E2760E73F00584D5F /* Main.storyboard */,
+				E90D1E312760E74300584D5F /* Assets.xcassets */,
+				E90D1E332760E74300584D5F /* LaunchScreen.storyboard */,
+				E90D1E362760E74300584D5F /* Info.plist */,
+			);
+			path = WellDesignedApp;
+			sourceTree = "<group>";
+		};
+		E9D9D2912762434C0023D5BF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E9D9D29C2762479F0023D5BF /* Rubik-Black.ttf */,
+				E9D9D2A12762479F0023D5BF /* Rubik-BlackItalic.ttf */,
+				E9D9D2A22762479F0023D5BF /* Rubik-Bold.ttf */,
+				E9D9D2972762479E0023D5BF /* Rubik-BoldItalic.ttf */,
+				E9D9D29A2762479F0023D5BF /* Rubik-ExtraBold.ttf */,
+				E9D9D29D2762479F0023D5BF /* Rubik-ExtraBoldItalic.ttf */,
+				E9D9D2992762479E0023D5BF /* Rubik-Italic.ttf */,
+				E9D9D29E2762479F0023D5BF /* Rubik-Light.ttf */,
+				E9D9D29B2762479F0023D5BF /* Rubik-LightItalic.ttf */,
+				E9D9D2962762479E0023D5BF /* Rubik-Medium.ttf */,
+				E9D9D29F2762479F0023D5BF /* Rubik-MediumItalic.ttf */,
+				E9D9D2A32762479F0023D5BF /* Rubik-Regular.ttf */,
+				E9D9D2A02762479F0023D5BF /* Rubik-SemiBold.ttf */,
+				E9D9D2982762479E0023D5BF /* Rubik-SemiBoldItalic.ttf */,
+				E9D9D292276243740023D5BF /* Rubik-Italic-VariableFont_wght.ttf */,
+				E9D9D293276243740023D5BF /* Rubik-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90D1E242760E73F00584D5F /* WellDesignedApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90D1E392760E74300584D5F /* Build configuration list for PBXNativeTarget "WellDesignedApp" */;
+			buildPhases = (
+				E90D1E212760E73F00584D5F /* Sources */,
+				E90D1E222760E73F00584D5F /* Frameworks */,
+				E90D1E232760E73F00584D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WellDesignedApp;
+			productName = ExtremellyWellDesigned;
+			productReference = E90D1E252760E73F00584D5F /* WellDesignedApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90D1E1D2760E73E00584D5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E90D1E242760E73F00584D5F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = E90D1E202760E73F00584D5F /* Build configuration list for PBXProject "WellDesignedApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E90D1E1C2760E73E00584D5F;
+			productRefGroup = E90D1E262760E73F00584D5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90D1E242760E73F00584D5F /* WellDesignedApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90D1E232760E73F00584D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D9D295276243740023D5BF /* Rubik-VariableFont_wght.ttf in Resources */,
+				E9D9D2B1276247A00023D5BF /* Rubik-Regular.ttf in Resources */,
+				E9C88683276235DF000B5223 /* LoginViewController.xib in Resources */,
+				E9C8868727623615000B5223 /* RegisterViewController.xib in Resources */,
+				E9D9D2AB2762479F0023D5BF /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				E90D1E352760E74300584D5F /* LaunchScreen.storyboard in Resources */,
+				E9D9D294276243740023D5BF /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
+				E90D1E322760E74300584D5F /* Assets.xcassets in Resources */,
+				E9D9D2A72762479F0023D5BF /* Rubik-Italic.ttf in Resources */,
+				E9D9D2A92762479F0023D5BF /* Rubik-LightItalic.ttf in Resources */,
+				E9D9D2B02762479F0023D5BF /* Rubik-Bold.ttf in Resources */,
+				E9D9D2AE2762479F0023D5BF /* Rubik-SemiBold.ttf in Resources */,
+				E9D9D2AF2762479F0023D5BF /* Rubik-BlackItalic.ttf in Resources */,
+				E90D1E302760E73F00584D5F /* Main.storyboard in Resources */,
+				E9D9D2A62762479F0023D5BF /* Rubik-SemiBoldItalic.ttf in Resources */,
+				E9D9D2AD2762479F0023D5BF /* Rubik-MediumItalic.ttf in Resources */,
+				E9D9D2AA2762479F0023D5BF /* Rubik-Black.ttf in Resources */,
+				E9D9D2A52762479F0023D5BF /* Rubik-BoldItalic.ttf in Resources */,
+				E9D9D2AC2762479F0023D5BF /* Rubik-Light.ttf in Resources */,
+				E9D9D2A82762479F0023D5BF /* Rubik-ExtraBold.ttf in Resources */,
+				E9D9D2A42762479F0023D5BF /* Rubik-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90D1E212760E73F00584D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90D1E2D2760E73F00584D5F /* MainViewController.swift in Sources */,
+				E9C8868627623615000B5223 /* RegisterViewController.swift in Sources */,
+				E90D1E292760E73F00584D5F /* AppDelegate.swift in Sources */,
+				E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */,
+				E9C88682276235DF000B5223 /* LoginViewController.swift in Sources */,
+				E90D1E2B2760E73F00584D5F /* SceneDelegate.swift in Sources */,
+				E97C8AE82767EEA40026EA35 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E90D1E2E2760E73F00584D5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90D1E2F2760E73F00584D5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E90D1E332760E74300584D5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90D1E342760E74300584D5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E90D1E372760E74300584D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E90D1E382760E74300584D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E90D1E3A2760E74300584D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellDesignedApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WellDesignedApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antcolony.WellDesignedApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E90D1E3B2760E74300584D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellDesignedApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WellDesignedApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antcolony.WellDesignedApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90D1E202760E73F00584D5F /* Build configuration list for PBXProject "WellDesignedApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90D1E372760E74300584D5F /* Debug */,
+				E90D1E382760E74300584D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90D1E392760E74300584D5F /* Build configuration list for PBXNativeTarget "WellDesignedApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90D1E3A2760E74300584D5F /* Debug */,
+				E90D1E3B2760E74300584D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90D1E1D2760E73E00584D5F /* Project object */;
+}
