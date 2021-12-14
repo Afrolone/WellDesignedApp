@@ -13,15 +13,17 @@ class MainViewController: UIViewController {
     let registerVC = RegisterViewController()
 
     @IBOutlet weak var loginRegisterSegmentedControl: UISegmentedControl!
-    
+    @IBOutlet weak var controlContainer: UIView!
     @IBOutlet weak var subviewContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         childViewsSetup()
         titleSetup()
-        segmentedControlUIsetup()
-        // Do any additional setup after loading the view.
+        Utils.segmentedControlSetup(
+            segmentedControl: loginRegisterSegmentedControl,
+            container: controlContainer
+        )
     }
     
     private func childViewsSetup() {
@@ -47,17 +49,6 @@ class MainViewController: UIViewController {
             .font: UIFont(name: "Rubik-Regular", size: 14)!
         ]
     }
-    
-    private func segmentedControlUIsetup() {
-        loginRegisterSegmentedControl.setTitleTextAttributes([
-            .foregroundColor: UIColor.black,
-            .font: UIFont(name: "Rubik-Medium", size: 16)!
-        ], for: .selected)
-        loginRegisterSegmentedControl.setTitleTextAttributes([
-            .foregroundColor: UIColor.black,
-            .font: UIFont(name: "Rubik-Light", size: 16)!
-        ], for: .normal)
-    }
 
     @IBAction func didTapSegment(segment: UISegmentedControl) {
         loginVC.view.isHidden = true
@@ -68,18 +59,4 @@ class MainViewController: UIViewController {
             registerVC.view.isHidden = false
         }
     }
-    
-    
 }
-
-//extension MViewController: UITextFieldDelegate {
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.tagBasedTextField(textField)
-//        return true
-//    }
-//
-//}
-
-
-

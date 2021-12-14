@@ -11,56 +11,41 @@ import UIKit
 class DesignableUITextField: UITextField {
     
     func setPlaceHolderStyle() {
-        // Placeholder text color
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[
             .foregroundColor: UIColor(rgbColorCodeRed: 30, green: 40, blue: 67, alpha: CGFloat(1)),
             .font: UIFont(name: "Rubik-Regular", size: 14)!
         ])
     }
     
-//    @IBInspectable var permanentPlaceholder: String? {
-//        didSet {
-//            placeholder = permanentPlaceholder
-//        }
-//    }
-    
-    // Provides left padding for images
-    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
-        var textRect = super.leftViewRect(forBounds: bounds)
-        textRect.origin.x += leftPadding
-        return textRect
-    }
-    
-//    func setPlaceHolder(to: String) {
-//        permanentPlaceholder = to
-//    }
-    
-    @IBInspectable var leftImage: UIImage? {
+    @IBInspectable var leftSideImage:UIImage = UIImage() {
+
         didSet {
-            updateView()
+            let leftImageView = UIImageView.init(image: leftSideImage)
+            let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 52))
+            containerView.addSubview(leftImageView)
+            leftImageView.center = containerView.center
+            leftView = containerView
+            leftViewMode = .always
         }
     }
-    
-    @IBInspectable var leftPadding: CGFloat = 0
-    
-    @IBInspectable var color: UIColor = UIColor.lightGray {
+
+    @IBInspectable var rightSideImage:UIImage = UIImage() {
+
         didSet {
-            updateView()
+            let button = UIButton(type: UIButton.ButtonType.custom)
+            button.frame = CGRect(x: 0, y: 0, width: 22, height: 16)
+            button.setImage(rightSideImage, for: .normal)
+            button.addTarget(self, action: #selector(revealSecureText), for: .touchUpInside)
+            let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 52))
+            containerView.addSubview(button)
+            button.center = containerView.center
+            rightView = containerView
+            rightViewMode = .always
         }
     }
     
-    func updateView() {
-        if let image = leftImage {
-            leftViewMode = UITextField.ViewMode.always
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = image
-            // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-            imageView.tintColor = color
-            leftView = imageView
-        } else {
-            leftViewMode = UITextField.ViewMode.never
-            leftView = nil
-        }
+    @objc func revealSecureText() {
+        isSecureTextEntry = !isSecureTextEntry
     }
+    
 }

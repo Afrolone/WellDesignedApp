@@ -11,30 +11,26 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: DesignableUITextField!
     @IBOutlet weak var passwordTextField: DesignableUITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("LoginViewController")
         setTextFields()
-        // Do any additional setup after loading the view.
+        Utils.setButton(button: loginButton)
     }
     
+    
     private func setTextFields() {
-        Utils.setTextViews(textField: emailTextField, imageName: "email", placeholder: "Email")
+        Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email")
         emailTextField.delegate = self
-        Utils.setTextViews(textField: passwordTextField, imageName: "lock", placeholder: "Password")
+        Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •")
         passwordTextField.delegate = self
+        passwordTextField.isSecureTextEntry = true
+        //passwordTextField.text = "pass123"
+        if let iconImage = UIImage(named: "icon") {
+            passwordTextField.rightSideImage = iconImage
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

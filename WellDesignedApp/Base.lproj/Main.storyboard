@@ -11,24 +11,40 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ExtremellyWellDesigned" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WellDesignedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-7D-K1Y">
-                                <rect key="frame" x="32" y="88" width="350" height="51"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnd-mx-CK8" userLabel="Control Container">
+                                <rect key="frame" x="32" y="88" width="350" height="50"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-7D-K1Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="51"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uxJ-Bb-Slj"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="LOG IN"/>
+                                            <segment title="REGISTER"/>
+                                        </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="didTapSegmentWithSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="F89-ea-b4G"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="uxJ-Bb-Slj"/>
+                                    <constraint firstItem="eUa-7D-K1Y" firstAttribute="leading" secondItem="lnd-mx-CK8" secondAttribute="leading" id="GBU-a9-pU2"/>
+                                    <constraint firstAttribute="height" constant="50" id="YlZ-tB-hDY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eUa-7D-K1Y" secondAttribute="trailing" id="c6H-A7-BeI"/>
+                                    <constraint firstAttribute="bottom" secondItem="eUa-7D-K1Y" secondAttribute="bottom" id="hGU-N8-lHq"/>
+                                    <constraint firstItem="eUa-7D-K1Y" firstAttribute="top" secondItem="lnd-mx-CK8" secondAttribute="top" id="mfk-do-YEc"/>
                                 </constraints>
-                                <segments>
-                                    <segment title="LOG IN"/>
-                                    <segment title="REGISTER"/>
-                                </segments>
-                                <connections>
-                                    <action selector="didTapSegmentWithSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="F89-ea-b4G"/>
-                                </connections>
-                            </segmentedControl>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGi-2C-6Pq">
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,17 +53,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="lnd-mx-CK8" firstAttribute="bottom" secondItem="UGi-2C-6Pq" secondAttribute="top" id="9GB-VI-TlG"/>
                             <constraint firstItem="UGi-2C-6Pq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bna-EE-0IL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UGi-2C-6Pq" secondAttribute="trailing" id="CMe-VS-Uih"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eUa-7D-K1Y" secondAttribute="trailing" constant="32" id="DBJ-YZ-lkw"/>
-                            <constraint firstItem="eUa-7D-K1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="cEv-Dj-zBH"/>
-                            <constraint firstItem="eUa-7D-K1Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dFn-H1-J8G"/>
+                            <constraint firstItem="lnd-mx-CK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="a0g-WP-mgG"/>
+                            <constraint firstItem="lnd-mx-CK8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aiF-Mw-DId"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UGi-2C-6Pq" secondAttribute="bottom" id="fcG-zf-BzT"/>
-                            <constraint firstItem="UGi-2C-6Pq" firstAttribute="top" secondItem="eUa-7D-K1Y" secondAttribute="bottom" id="yze-Xx-FGm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lnd-mx-CK8" secondAttribute="trailing" constant="32" id="hZf-IB-Gzw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yYn-W7-ezg"/>
                     <connections>
+                        <outlet property="controlContainer" destination="lnd-mx-CK8" id="Tgx-bE-IFa"/>
                         <outlet property="loginRegisterSegmentedControl" destination="eUa-7D-K1Y" id="69Q-8v-vXy"/>
                         <outlet property="subviewContainer" destination="UGi-2C-6Pq" id="xSR-qk-jfR"/>
                     </connections>
