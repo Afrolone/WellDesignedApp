@@ -54,6 +54,8 @@ class Utils {
         textField.textColor = UIColor(rgbColorCodeRed: 30, green: 40, blue: 67, alpha: CGFloat(1))
         textField.placeholder = placeholder
         textField.setPlaceHolderStyle()
+        
+        textField.backgroundColor = UIColor.white
     }
     
 }

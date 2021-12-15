@@ -21,6 +21,7 @@
             <connections>
                 <outlet property="emailTextField" destination="gxN-bw-Zhp" id="CJo-hd-Lkb"/>
                 <outlet property="loginButton" destination="gFQ-g2-OIZ" id="CAj-tG-3Hg"/>
+                <outlet property="loginScrollView" destination="Y6l-bw-rKl" id="dCN-VW-Uk0"/>
                 <outlet property="passwordTextField" destination="Xo2-Sm-7GF" id="6CX-A3-sqY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

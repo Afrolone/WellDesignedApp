@@ -7,8 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
 
+    @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var emailTextField: DesignableUITextField!
     @IBOutlet weak var passwordTextField: DesignableUITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -18,6 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         print("LoginViewController")
         setTextFields()
         Utils.setButton(button: loginButton)
+        initializeScrollView(scrollView: loginScrollView)
     }
     
     
