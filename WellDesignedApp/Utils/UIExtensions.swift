@@ -64,3 +64,14 @@ public extension UIImage {
       }
     
 }
+
+public extension UIViewController {
+    func sendAlert(title: String, message: String) {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: {action
+                in
+            })
+            alert.addAction(action)
+            present(alert, animated: true)
+        }
+}

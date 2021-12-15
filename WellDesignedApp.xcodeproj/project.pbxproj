@@ -17,6 +17,11 @@
 		E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */; };
 		E97C8AEC2768F5830026EA35 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AEB2768F5830026EA35 /* UIExtensions.swift */; };
 		E9B265F62769EDE100078B85 /* KeyboardHandlingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */; };
+		E9B265FE276A103400078B85 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265FD276A103400078B85 /* FormValidation.swift */; };
+		E9B26600276A106900078B85 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265FF276A106900078B85 /* LoginForm.swift */; };
+		E9B26604276A112700078B85 /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26603276A112700078B85 /* RegisterForm.swift */; };
+		E9B26606276A129600078B85 /* ValidationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26605276A129600078B85 /* ValidationMessage.swift */; };
+		E9B26609276A166500078B85 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26608276A166500078B85 /* LoggedInViewController.swift */; };
 		E9C88682276235DF000B5223 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C88680276235DF000B5223 /* LoginViewController.swift */; };
 		E9C88683276235DF000B5223 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C88681276235DF000B5223 /* LoginViewController.xib */; };
 		E9C8868627623615000B5223 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C8868427623615000B5223 /* RegisterViewController.swift */; };
@@ -52,6 +57,11 @@
 		E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		E97C8AEB2768F5830026EA35 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
+		E9B265FD276A103400078B85 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		E9B265FF276A106900078B85 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		E9B26603276A112700078B85 /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
+		E9B26605276A129600078B85 /* ValidationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMessage.swift; sourceTree = "<group>"; };
+		E9B26608276A166500078B85 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		E9C88680276235DF000B5223 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9C88681276235DF000B5223 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E9C8868427623615000B5223 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -104,24 +114,85 @@
 		E90D1E272760E73F00584D5F /* WellDesignedApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9B26607276A164B00078B85 /* LoggedInViewController */,
+				E9B265FC276A0FF400078B85 /* Validation */,
+				E9B265FB276A0D4100078B85 /* CustomUIClasses */,
+				E9B265FA276A0D1C00078B85 /* Utils */,
+				E9B265F9276A0CE000078B85 /* MainViewController */,
+				E9B265F8276A0CC100078B85 /* LoginViewController */,
+				E9B265F7276A0CB100078B85 /* RegisterViewController */,
 				E9D9D2912762434C0023D5BF /* Fonts */,
 				E90D1E282760E73F00584D5F /* AppDelegate.swift */,
 				E90D1E2A2760E73F00584D5F /* SceneDelegate.swift */,
-				E90D1E2C2760E73F00584D5F /* MainViewController.swift */,
-				E97C8AE72767EEA40026EA35 /* Utils.swift */,
-				E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */,
-				E97C8AEB2768F5830026EA35 /* UIExtensions.swift */,
-				E9C8868427623615000B5223 /* RegisterViewController.swift */,
-				E9C8868527623615000B5223 /* RegisterViewController.xib */,
-				E9C88680276235DF000B5223 /* LoginViewController.swift */,
-				E9C88681276235DF000B5223 /* LoginViewController.xib */,
-				E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */,
-				E90D1E2E2760E73F00584D5F /* Main.storyboard */,
 				E90D1E312760E74300584D5F /* Assets.xcassets */,
 				E90D1E332760E74300584D5F /* LaunchScreen.storyboard */,
 				E90D1E362760E74300584D5F /* Info.plist */,
 			);
 			path = WellDesignedApp;
+			sourceTree = "<group>";
+		};
+		E9B265F7276A0CB100078B85 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C8868427623615000B5223 /* RegisterViewController.swift */,
+				E9C8868527623615000B5223 /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		E9B265F8276A0CC100078B85 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C88680276235DF000B5223 /* LoginViewController.swift */,
+				E9C88681276235DF000B5223 /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		E9B265F9276A0CE000078B85 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E90D1E2C2760E73F00584D5F /* MainViewController.swift */,
+				E90D1E2E2760E73F00584D5F /* Main.storyboard */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		E9B265FA276A0D1C00078B85 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E97C8AE72767EEA40026EA35 /* Utils.swift */,
+				E97C8AEB2768F5830026EA35 /* UIExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E9B265FB276A0D4100078B85 /* CustomUIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */,
+				E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */,
+			);
+			path = CustomUIClasses;
+			sourceTree = "<group>";
+		};
+		E9B265FC276A0FF400078B85 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				E9B265FD276A103400078B85 /* FormValidation.swift */,
+				E9B265FF276A106900078B85 /* LoginForm.swift */,
+				E9B26603276A112700078B85 /* RegisterForm.swift */,
+				E9B26605276A129600078B85 /* ValidationMessage.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		E9B26607276A164B00078B85 /* LoggedInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9B26608276A166500078B85 /* LoggedInViewController.swift */,
+			);
+			path = LoggedInViewController;
 			sourceTree = "<group>";
 		};
 		E9D9D2912762434C0023D5BF /* Fonts */ = {
@@ -238,12 +309,17 @@
 			files = (
 				E90D1E2D2760E73F00584D5F /* MainViewController.swift in Sources */,
 				E9C8868627623615000B5223 /* RegisterViewController.swift in Sources */,
+				E9B26604276A112700078B85 /* RegisterForm.swift in Sources */,
 				E90D1E292760E73F00584D5F /* AppDelegate.swift in Sources */,
 				E97C8AEC2768F5830026EA35 /* UIExtensions.swift in Sources */,
+				E9B26609276A166500078B85 /* LoggedInViewController.swift in Sources */,
+				E9B265FE276A103400078B85 /* FormValidation.swift in Sources */,
+				E9B26606276A129600078B85 /* ValidationMessage.swift in Sources */,
 				E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */,
 				E9C88682276235DF000B5223 /* LoginViewController.swift in Sources */,
 				E9B265F62769EDE100078B85 /* KeyboardHandlingBaseVC.swift in Sources */,
 				E90D1E2B2760E73F00584D5F /* SceneDelegate.swift in Sources */,
+				E9B26600276A106900078B85 /* LoginForm.swift in Sources */,
 				E97C8AE82767EEA40026EA35 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

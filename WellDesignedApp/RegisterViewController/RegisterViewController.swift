@@ -9,6 +9,7 @@ import UIKit
 
 class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
     
+    var registerForm = RegisterForm()
     
     @IBOutlet weak var registerScrollView: UIScrollView!
     
@@ -19,6 +20,10 @@ class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
     @IBOutlet weak var repeatPasswordTextField: DesignableUITextField!
     @IBOutlet weak var createAccountButton: UIButton!
     
+    @IBAction func onCreateAccountTapped(_ sender: Any) {
+        formCheck()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,6 +31,24 @@ class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
         setTextFields()
         Utils.setButton(button: createAccountButton)
         initializeScrollView(scrollView: registerScrollView)
+    }
+    
+    private func formCheck() {
+        registerForm.name = nameTextField.text ?? ""
+        registerForm.surname = surnameTextField.text ?? ""
+        registerForm.email = emailTextField.text ?? ""
+        registerForm.password = passwordTextField.text ?? ""
+        registerForm.confirmPassword = repeatPasswordTextField.text ?? ""
+        
+        let result = FormValidation.validateForm(registerForm: registerForm)
+        
+        if result.validation == false {
+            sendAlert(title: "Bad Input", message: result.message)
+        } else {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoggedInViewController") as! LoggedInViewController
+            vc.email = registerForm.email
+                            navigationController?.present(vc, animated: true)
+        }
     }
     
     private func setTextFields() {

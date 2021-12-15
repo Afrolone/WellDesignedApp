@@ -73,6 +73,38 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="67.633928571428569"/>
         </scene>
+        <!--LoggedInViewController-->
+        <scene sceneID="tXg-vm-SBo">
+            <objects>
+                <viewController storyboardIdentifier="LoggedInViewController" title="LoggedInViewController" id="RUN-BH-l57" customClass="LoggedInViewController" customModule="WellDesignedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AfT-Ge-QUV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-hz-eSd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q7n-JH-tun"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PBX-hz-eSd" firstAttribute="leading" secondItem="q7n-JH-tun" secondAttribute="leading" id="O5u-0I-OU1"/>
+                            <constraint firstItem="q7n-JH-tun" firstAttribute="bottom" secondItem="PBX-hz-eSd" secondAttribute="bottom" id="hPl-ij-F2C"/>
+                            <constraint firstItem="PBX-hz-eSd" firstAttribute="top" secondItem="q7n-JH-tun" secondAttribute="top" id="xmn-KZ-45w"/>
+                            <constraint firstItem="q7n-JH-tun" firstAttribute="trailing" secondItem="PBX-hz-eSd" secondAttribute="trailing" id="zk9-Lg-RTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="PBX-hz-eSd" id="m3l-LV-h18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3c-v3-yDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="68"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ijN-sc-oaW">
             <objects>
