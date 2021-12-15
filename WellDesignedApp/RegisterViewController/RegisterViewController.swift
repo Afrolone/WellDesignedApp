@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
+class RegisterViewController: KeyboardHandlingBaseVC {
     
     var registerForm = RegisterForm()
     
@@ -26,7 +26,6 @@ class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         print("RegisterViewController")
         setTextFields()
         Utils.setButton(button: createAccountButton)
@@ -52,11 +51,7 @@ class RegisterViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
     }
     
     private func setTextFields() {
-        nameTextField.delegate = self
-        surnameTextField.delegate = self
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        repeatPasswordTextField.delegate = self
+        setTextFieldDelegates()
         
         Utils.setTextView(textField: nameTextField, imageName: "personOutline_2", placeholder: "Name")
         Utils.setTextView(textField: surnameTextField, imageName: "personOutline_2", placeholder: "Surname")

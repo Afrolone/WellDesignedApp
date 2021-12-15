@@ -71,8 +71,8 @@ private extension KeyboardHandlingBaseVC {
             
             // Set the scroll view's content inset to avoid the keyboard
             // Don't forget the scroll indicator too!
-            scrollView.contentInset.bottom = keyboardOverlap
-            scrollView.scrollIndicatorInsets.bottom = keyboardOverlap
+            scrollView.contentInset.bottom = keyboardOverlap + 5 //JAHJA - Added 5 of padding
+            scrollView.scrollIndicatorInsets.bottom = keyboardOverlap + 5 //JAHJA - Added 5 of padding
             
             let duration = (durationValue as AnyObject).doubleValue
             let options = UIView.AnimationOptions(rawValue: UInt((curveValue as AnyObject).integerValue << 16))

@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class DesignableUITextField: UITextField {
+class DesignableUITextField: UITextField, UITextFieldDelegate {
     
     func setPlaceHolderStyle() {
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[

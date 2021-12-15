@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
+class LoginViewController: KeyboardHandlingBaseVC {
     
     var loginForm: LoginForm = LoginForm()
 
@@ -44,10 +44,9 @@ class LoginViewController: KeyboardHandlingBaseVC, UITextFieldDelegate {
     }
     
     private func setTextFields() {
+        setTextFieldDelegates()
         Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email")
-        emailTextField.delegate = self
         Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •")
-        passwordTextField.delegate = self
         passwordTextField.isSecureTextEntry = true
         //passwordTextField.text = "pass123"
         if let iconImage = UIImage(named: "icon") {
