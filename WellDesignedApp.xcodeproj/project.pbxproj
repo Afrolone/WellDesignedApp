@@ -13,14 +13,12 @@
 		E90D1E302760E73F00584D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E2E2760E73F00584D5F /* Main.storyboard */; };
 		E90D1E322760E74300584D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E312760E74300584D5F /* Assets.xcassets */; };
 		E90D1E352760E74300584D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90D1E332760E74300584D5F /* LaunchScreen.storyboard */; };
+		E92E6E7E276B87EA00A19B7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E6E7D276B87EA00A19B7C /* Constants.swift */; };
 		E97C8AE82767EEA40026EA35 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AE72767EEA40026EA35 /* Utils.swift */; };
 		E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */; };
 		E97C8AEC2768F5830026EA35 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C8AEB2768F5830026EA35 /* UIExtensions.swift */; };
 		E9B265F62769EDE100078B85 /* KeyboardHandlingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */; };
 		E9B265FE276A103400078B85 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265FD276A103400078B85 /* FormValidation.swift */; };
-		E9B26600276A106900078B85 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B265FF276A106900078B85 /* LoginForm.swift */; };
-		E9B26604276A112700078B85 /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26603276A112700078B85 /* RegisterForm.swift */; };
-		E9B26606276A129600078B85 /* ValidationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26605276A129600078B85 /* ValidationMessage.swift */; };
 		E9B26609276A166500078B85 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B26608276A166500078B85 /* LoggedInViewController.swift */; };
 		E9B2660B276A2D6E00078B85 /* LoginExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B2660A276A2D6E00078B85 /* LoginExtensions.swift */; };
 		E9B2660D276A2DC200078B85 /* RegisterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B2660C276A2DC200078B85 /* RegisterExtensions.swift */; };
@@ -55,14 +53,12 @@
 		E90D1E312760E74300584D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90D1E342760E74300584D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90D1E362760E74300584D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92E6E7D276B87EA00A19B7C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E97C8AE72767EEA40026EA35 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E97C8AE92767F8EC0026EA35 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		E97C8AEB2768F5830026EA35 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		E9B265F52769EDE100078B85 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
 		E9B265FD276A103400078B85 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
-		E9B265FF276A106900078B85 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
-		E9B26603276A112700078B85 /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
-		E9B26605276A129600078B85 /* ValidationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMessage.swift; sourceTree = "<group>"; };
 		E9B26608276A166500078B85 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		E9B2660A276A2D6E00078B85 /* LoginExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtensions.swift; sourceTree = "<group>"; };
 		E9B2660C276A2DC200078B85 /* RegisterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterExtensions.swift; sourceTree = "<group>"; };
@@ -169,6 +165,7 @@
 			children = (
 				E97C8AE72767EEA40026EA35 /* Utils.swift */,
 				E97C8AEB2768F5830026EA35 /* UIExtensions.swift */,
+				E92E6E7D276B87EA00A19B7C /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,9 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				E9B265FD276A103400078B85 /* FormValidation.swift */,
-				E9B265FF276A106900078B85 /* LoginForm.swift */,
-				E9B26603276A112700078B85 /* RegisterForm.swift */,
-				E9B26605276A129600078B85 /* ValidationMessage.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -314,19 +308,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90D1E2D2760E73F00584D5F /* MainViewController.swift in Sources */,
+				E92E6E7E276B87EA00A19B7C /* Constants.swift in Sources */,
 				E9C8868627623615000B5223 /* RegisterViewController.swift in Sources */,
-				E9B26604276A112700078B85 /* RegisterForm.swift in Sources */,
 				E90D1E292760E73F00584D5F /* AppDelegate.swift in Sources */,
 				E97C8AEC2768F5830026EA35 /* UIExtensions.swift in Sources */,
 				E9B26609276A166500078B85 /* LoggedInViewController.swift in Sources */,
 				E9B265FE276A103400078B85 /* FormValidation.swift in Sources */,
-				E9B26606276A129600078B85 /* ValidationMessage.swift in Sources */,
 				E9B2660D276A2DC200078B85 /* RegisterExtensions.swift in Sources */,
 				E97C8AEA2767F8EC0026EA35 /* DesignableUITextField.swift in Sources */,
 				E9C88682276235DF000B5223 /* LoginViewController.swift in Sources */,
 				E9B265F62769EDE100078B85 /* KeyboardHandlingBaseVC.swift in Sources */,
 				E90D1E2B2760E73F00584D5F /* SceneDelegate.swift in Sources */,
-				E9B26600276A106900078B85 /* LoginForm.swift in Sources */,
 				E9B2660B276A2D6E00078B85 /* LoginExtensions.swift in Sources */,
 				E97C8AE82767EEA40026EA35 /* Utils.swift in Sources */,
 			);

@@ -24,3 +24,30 @@ extension LoginViewController: UITextFieldDelegate {
            return false
     }
 }
+
+extension LoginViewController {
+    func inputHasError() -> Bool {
+        var hasError = false
+        
+        if let email = emailTextField?.text {
+            if !FormValidation.isValidEmail(email) {
+                hasError = true
+                emailTextField.toggleErrorStyle(error: true)
+            } else {
+                emailTextField.toggleErrorStyle(error: false)
+            }
+        }
+        
+        if let password = passwordTextField?.text {
+            
+            if (password.count > 6 || password.count == 0) {
+                hasError = true
+                passwordTextField.toggleErrorStyle(error: true)
+            } else {
+                passwordTextField.toggleErrorStyle(error: false)
+            }
+        }
+        
+        return hasError
+    }
+}

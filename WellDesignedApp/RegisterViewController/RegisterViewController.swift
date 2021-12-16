@@ -9,7 +9,6 @@ import UIKit
 
 class RegisterViewController: KeyboardHandlingBaseVC {
     
-    var registerForm = RegisterForm()
     
     @IBOutlet weak var registerScrollView: UIScrollView!
     
@@ -33,19 +32,11 @@ class RegisterViewController: KeyboardHandlingBaseVC {
     }
     
     private func formCheck() {
-        registerForm.name = nameTextField.text ?? ""
-        registerForm.surname = surnameTextField.text ?? ""
-        registerForm.email = emailTextField.text ?? ""
-        registerForm.password = passwordTextField.text ?? ""
-        registerForm.confirmPassword = repeatPasswordTextField.text ?? ""
         
-        let result = FormValidation.validateForm(registerForm: registerForm)
         
-        if result.validation == false {
-            sendAlert(title: "Bad Input", message: result.message)
-        } else {
+        if !inputHasError() {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoggedInViewController") as! LoggedInViewController
-            vc.email = registerForm.email
+            vc.email = emailTextField?.text
                             navigationController?.present(vc, animated: true)
         }
     }
@@ -53,11 +44,16 @@ class RegisterViewController: KeyboardHandlingBaseVC {
     private func setTextFields() {
         setTextFieldDelegates()
         
-        Utils.setTextView(textField: nameTextField, imageName: "personOutline_2", placeholder: "Name")
-        Utils.setTextView(textField: surnameTextField, imageName: "personOutline_2", placeholder: "Surname")
-        Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email")
-        Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •")
-        Utils.setTextView(textField: repeatPasswordTextField, imageName: "lock", placeholder: "Repeat password")
+        Utils.setTextView(textField: nameTextField, imageName: "personOutline_2",placeholder: "Name",
+                          errorMessage: Constants.nameErr)
+        Utils.setTextView(textField: surnameTextField, imageName: "personOutline_2", placeholder: "Surname",
+                          errorMessage: Constants.surnameErr)
+        Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email",
+                          errorMessage: Constants.emailErr)
+        Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •",
+                          errorMessage: Constants.passwordErr)
+        Utils.setTextView(textField: repeatPasswordTextField, imageName: "lock", placeholder: "Repeat password",
+                          errorMessage: Constants.confirmPasswordErr)
         
         passwordTextField.isSecureTextEntry = true
         repeatPasswordTextField.isSecureTextEntry = true

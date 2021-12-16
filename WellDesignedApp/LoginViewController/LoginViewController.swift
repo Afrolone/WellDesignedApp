@@ -8,8 +8,6 @@
 import UIKit
 
 class LoginViewController: KeyboardHandlingBaseVC {
-    
-    var loginForm: LoginForm = LoginForm()
 
     @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var emailTextField: DesignableUITextField!
@@ -29,29 +27,26 @@ class LoginViewController: KeyboardHandlingBaseVC {
     }
     
     private func formCheck() {
-        loginForm.email = emailTextField.text ?? ""
-        loginForm.password = passwordTextField.text ?? ""
-        
-        let result = FormValidation.validateForm(loginForm: loginForm)
-        
-        if result.validation == false {
-            sendAlert(title: "Bad Input", message: result.message)
-        } else {
+        if !inputHasError() {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoggedInViewController") as! LoggedInViewController
-            vc.email = loginForm.email
+            vc.email = emailTextField?.text
                             navigationController?.present(vc, animated: true)
         }
     }
     
     private func setTextFields() {
         setTextFieldDelegates()
-        Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email")
-        Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •")
+        
+        Utils.setTextView(textField: emailTextField, imageName: "email", placeholder: "Email" ,
+            errorMessage: Constants.emailErr)
+        Utils.setTextView(textField: passwordTextField, imageName: "lock", placeholder: "• • • • • •",
+            errorMessage: Constants.passwordErr)
+        
         passwordTextField.isSecureTextEntry = true
-        //passwordTextField.text = "pass123"
         if let iconImage = UIImage(named: "icon") {
             passwordTextField.rightSideImage = iconImage
         }
+        
     }
 
 }

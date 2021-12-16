@@ -39,12 +39,12 @@ class Utils {
         button.layer.insertSublayer(gradient, at: 0)
         }
     
-    static func setTextView(textField: DesignableUITextField, imageName: String, placeholder: String) {
+    static func setTextView(textField: DesignableUITextField, imageName: String, placeholder: String, errorMessage: String) {
         textField.layer.cornerRadius = 10
         textField.setLeftPaddingPoints(5)
         textField.setRightPaddingPoints(5)
         textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor(rgbColorCodeRed: 226, green: 230, blue: 235, alpha: CGFloat(1)).cgColor
+        textField.layer.borderColor = Constants.textFieldBorderColor
         
         if let image = UIImage(named: imageName) {
             textField.leftSideImage = image
@@ -53,6 +53,8 @@ class Utils {
         textField.font = UIFont(name: "Rubik-Regular", size: 14.0)
         textField.textColor = UIColor(rgbColorCodeRed: 30, green: 40, blue: 67, alpha: CGFloat(1))
         textField.placeholder = placeholder
+        textField.permanentPlaceHolder = placeholder
+        textField.errorMessage = errorMessage
         textField.setPlaceHolderStyle()
         
         textField.backgroundColor = UIColor.white
