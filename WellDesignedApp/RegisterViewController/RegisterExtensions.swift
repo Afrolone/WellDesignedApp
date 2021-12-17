@@ -17,6 +17,12 @@ extension RegisterViewController: UITextFieldDelegate {
             repeatPasswordTextField.delegate = self
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if let field = textField as? DesignableUITextField {
+            field.toggleErrorStyle(error: false)
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
            if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
               nextField.becomeFirstResponder()
@@ -28,6 +34,15 @@ extension RegisterViewController: UITextFieldDelegate {
 }
 
 extension RegisterViewController {
+    
+    func setTextFieldsToDefault() {
+        nameTextField.toggleErrorStyle(error: false)
+        surnameTextField.toggleErrorStyle(error: false)
+        emailTextField.toggleErrorStyle(error: false)
+        passwordTextField.toggleErrorStyle(error: false)
+        repeatPasswordTextField.toggleErrorStyle(error: false)
+    }
+    
     func inputHasError() -> Bool {
         var hasError = false
         

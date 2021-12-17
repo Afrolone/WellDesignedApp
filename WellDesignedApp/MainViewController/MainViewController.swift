@@ -54,8 +54,10 @@ class MainViewController: UIViewController {
         loginVC.view.isHidden = true
         registerVC.view.isHidden = true
         if segment.selectedSegmentIndex == 0 {
+            loginVC.setTextFieldsToDefault()
             loginVC.view.isHidden = false
         } else {
+            registerVC.setTextFieldsToDefault()
             registerVC.view.isHidden = false
         }
     }

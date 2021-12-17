@@ -59,6 +59,7 @@ class RegisterViewController: KeyboardHandlingBaseVC {
         repeatPasswordTextField.isSecureTextEntry = true
         if let iconImage = UIImage(named: "icon") {
             passwordTextField.rightSideImage = iconImage
+            repeatPasswordTextField.rightSideImage = iconImage
         }
     }
 
